@@ -1,12 +1,9 @@
 /**********************************************
- Workshop 3
- Course:APD-545 - semester-5
+ CREDIT CRUISE LOAN CALCULATOR
  Last Name:Saini
  First Name:Hashmeet Singh
- ID:153070214
- Section:NAA
- This assignment represents my own work in accordance with Seneca Academic Policy.
- Hashmeet Singh Saini
+ This project has been authored by Hashmeet
+ Singh Saini
  Date: March 1st 2024
  **********************************************/
 
