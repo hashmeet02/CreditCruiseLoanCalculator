@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox fx:id="mainPanel" maxHeight="728.0" maxWidth="436.0" minHeight="728.0" minWidth="436.0" prefHeight="728.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.workshop3creditcruise.controllers.CreditCruiseController">
+   <children>
+      <AnchorPane maxHeight="728.0" maxWidth="436.0" minHeight="728.0" minWidth="436.0" prefHeight="728.0" prefWidth="436.0" style="-fx-background-color: rgba(0, 77, 70, 1);">
+         <children>
+            <GridPane layoutX="20.0" layoutY="107.0" prefHeight="513.0" prefWidth="395.0" style="-fx-border-radius: 20; -fx-background-color: rgba(0, 30, 27, 1); -fx-background-radius: 30;" AnchorPane.bottomAnchor="107.85714285714289" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="21.142857142857167" AnchorPane.topAnchor="107.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.42852783203125" minWidth="10.0" prefWidth="165.57142857142858" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="334.00003814697266" minWidth="10.0" prefWidth="236.42857142857142" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="61.71424211774553" minHeight="10.0" prefHeight="23.999947684151778" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="108.57148088727678" minHeight="10.0" prefHeight="108.57148088727678" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Type of Vehicle" textFill="#00ffe5" />
+                  <ComboBox fx:id="vehicleType" prefHeight="25.0" prefWidth="246.0" promptText="Vehicle type" GridPane.columnIndex="1" />
+                  <Label text="Age of Vehicle" textFill="#00ffe5" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="vehicleAge" prefHeight="25.0" prefWidth="262.0" promptText="Vehicle age" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Price of Vehicle" textFill="#00ffe5" GridPane.rowIndex="2" />
+                  <TextField fx:id="vehiclePrice" maxWidth="250.0" prefHeight="25.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Down Payment" textFill="#00ffe5" GridPane.rowIndex="3" />
+                  <TextField fx:id="loanDownPay" maxWidth="255.0" prefHeight="25.0" prefWidth="255.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Interest Rate" textFill="#00ffe5" GridPane.rowIndex="4" />
+                  <TextField fx:id="loanInterestRate" editable="false" maxWidth="269.0" prefHeight="25.0" prefWidth="269.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="Loan Payment Period" textFill="#00ffe5" GridPane.rowIndex="5" />
+                  <Slider fx:id="loanTimePeriod" blockIncrement="12.0" majorTickUnit="12.0" max="96.0" min="12.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="12.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label text="Payment Frequency" textFill="#00ffe5" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="loanPayFreq" prefHeight="25.0" prefWidth="270.0" promptText="Frequency" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label text="Loan details" textFill="#00ffe5" GridPane.rowIndex="7" />
+                  <Label fx:id="loanDetails" prefHeight="109.0" prefWidth="269.0" text="..." textFill="#00ffe5" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+               </padding>
+            </GridPane>
+            <Pane layoutX="20.0" layoutY="14.0" prefHeight="85.0" prefWidth="395.0" style="-fx-background-color: rgba(0, 30, 27, 1); -fx-background-radius: 50px;">
+               <children>
+                  <ImageView fitHeight="85.0" fitWidth="151.0" layoutX="233.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pngtree-car-sports-car-transportation-png-image_5320963-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#00ffe5" layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit Cruise ">
+                     <font>
+                        <Font name="Aparajita" size="48.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <GridPane layoutX="20.0" layoutY="683.0" prefHeight="30.0" prefWidth="395.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.4285888671875" minWidth="10.0" prefWidth="91.85711669921875" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.857177734375" minWidth="10.0" prefWidth="118.14288330078125" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="clearBtn" minWidth="80.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: black; -fx-background-radius: 30px;" text="Clear" textFill="#00ffe5" />
+                  <Button fx:id="calcBtn" minWidth="80.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-background-radius: 30px;" text="Calculate" textFill="#00ffe5" GridPane.columnIndex="1" />
+                  <Button fx:id="saveRateBtn" minWidth="80.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-background-radius: 30px;" text="Save Rate" textFill="#00ffe5" GridPane.columnIndex="2" />
+                  <Button fx:id="showRateBtn" minWidth="80.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-background-radius: 30px;" text="Show Saved Rates" textFill="#00ffe5" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+            <Pane layoutX="19.0" layoutY="633.0" prefHeight="38.0" prefWidth="395.0" style="-fx-background-color: rgba(0, 30, 27, 1); -fx-background-radius: 50px;">
+               <children>
+                  <Label fx:id="infoBox" layoutX="47.0" layoutY="2.0" prefHeight="35.0" prefWidth="334.0" text="Welcome to Credit Cruise!" textFill="#00ffe5" wrapText="true" />
+                  <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@info_white_button_icon_227839.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
